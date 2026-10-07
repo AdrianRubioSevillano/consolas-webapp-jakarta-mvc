@@ -1,0 +1,35 @@
+### GET request to example server
+GET http://localhost:8081/consolas
+Content-Type: application/json
+
+###
+
+GET http://localhost:8081/consolas/1
+Content-Type: application/json
+
+###
+
+POST http://localhost:8081/consolas
+Content-Type: application/json
+
+{
+  "nombre": "Xbox 360",
+  "fabricante": "MICROSOFT",
+  "fechaLanzamiento": "2010-01-01",
+  "foto": "https://www.backmarket.es/cdn-cgi/image/format%3Dauto%2Cquality%3D75%2Cwidth%3D1080/https://d2e6ccujb3mkqf.cloudfront.net/00f343d3-95c9-42a5-bd82-a3330883aa28-1_fa02e16b-6056-45b1-ba64-c64d3880952c.jpg"
+}
+
+###
+
+PUT http://localhost:8081/consolas/1
+Content-Type: application/json
+
+{
+  "nombre": "Nintendo Ds",
+  "fabricante": "NINTENDO",
+  "fechaLanzamiento": "2008-01-01",
+  "foto": "https://www.backmarket.es/cdn-cgi/image/format%3Dauto%2Cquality%3D75%2Cwidth%3D1080/https://d2e6ccujb3mkqf.cloudfront.net/8e3cd062-4dcc-4160-bd96-03c389dabc5f-1_b81c3f3d-658c-48c8-9747-9decd2333929.jpg"
+}
+
+###
+DELETE http://localhost:8081/consolas/3
